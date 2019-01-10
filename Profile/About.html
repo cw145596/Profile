@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>About</title>
   </head>
+  <!-- ---------------------------------------------    Style    ------------------------------------------------------------------ -->
   <style>
     body {
       margin: 0;
@@ -12,43 +13,7 @@
     	text-align:center;
     	font-size: 100px;
   }
-  img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-height: 50%;
 
-
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #0033cc;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -77,39 +42,108 @@ div.desc {
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
   </style>
-<!-- ---------------------------------------------------------------------------------------------------------------------- -->
-<body>
-  <ul>
-  	<img src="images/livefree.PNG" style="width:100%" alt="me">
+  <!-- -----------------------------------Navagation Bar-------------------------------------------------------- -->
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">More
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Best Work</a>
+        <a href="#">Jobs</a>
+        <a href="#">Gallary</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
 
 
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+  <!-- ------------------------------------------------------------------------------------ -->
   <h1>About</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
+  <h3>Hello, My name is Cameron White. I go to Davenport West Highschool. My favorite classes consist from Business
+    courses to computer science classes. I partisipate in extraciricular activities like Golf and Swimming. When I comptete
+    in events for swimming I am most likely to compete in the medely relay, 100m and 50m freestyle and backstroke.
+          </h3>
   <div class="responsive">
     <div class="gallery">
       <a target="_blank" href="img_5terre.jpg">
